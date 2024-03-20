@@ -1,0 +1,34 @@
+\usepackage{imakeidx}
+\usepackage[svgnames,x11names,table]{xcolor}
+\usepackage[pdfborder={0 0 0}, linkcolor=NavyBlue, pagebackref,breaklinks,colorlinks, citecolor=DarkBlue]{hyperref}
+\newcommand{\myindex}[1]{\index{\MakeLowercase{#1}}}
+\usepackage{xltabular}
+
+\newcommand {\etal}{et al.}
+\newcommand{\ie}{i.e.,~}
+\newcommand{\eg}{e.g.,~}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\newcommand{\sref}[1]{\hfill \hspace{-0.05cm} {(Eq.\ref{#1})}}
+\newcommand{\vectordiff}{\vert \setminus}
+\newcommand{\vectorconc}{\|}
+\newcommand{\vectorrepl}{\vert \setminus \|}
+\newcommand{\set}{vector}
+\newcommand{\concatenation}{concatenation}
+
+\newcommand{\deletion}{deletion}
+\newcommand{\logtrans}{log-transform}
+\newcommand{\logparadox}{log-paradox}
+\newcommand{\replacement}{replacement}
+
+%% Index
+\makeindex[columns=3, intoc, title=Alphabetical Index]
+
+%% Acronyms
+\usepackage{acro}[=v2]
+\acsetup{
+  index/use = true,
+  make-links ,
+  pages / display = first ,
+}
+\input{Abbreviations.tex} 
