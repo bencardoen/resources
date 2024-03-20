@@ -11,3 +11,9 @@ https://raw.githubusercontent.com/bencardoen/resources/main/setup.tex
 The file is now available in your project, and you can use it, synchronize it, and so on.
 You can also change the branch so changes do not clash.
 ![example](example.png)
+
+## Files
+
+- setup.tex: common packages and their configuration options. Includes Abbreviations.tex
+- Abbreviations.tex: Acronyms (with citation) for use in acro v2.8+. Citations depend on `references.bib`
+- references.bib: Common bibliography, exported from Zotero
